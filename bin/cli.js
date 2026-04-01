@@ -8,6 +8,20 @@ import { synthesizePersona } from '../lib/synthesizer.js';
 import { refineLoop } from '../lib/refine.js';
 import { saveOutputs } from '../lib/output.js';
 
+const args = process.argv.slice(2);
+if (args[0] === '--help' || args[0] === '-h') {
+  console.log(`
+pm-persona — Build your ideal AI assistant persona
+
+Usage:
+  pm-persona          Run the interactive interview
+  pm-persona --help   Show this help message
+
+Requires: ANTHROPIC_API_KEY environment variable
+`);
+  process.exit(0);
+}
+
 async function main() {
   console.log(chalk.blue.bold('\n  PM Persona Builder\n'));
   console.log(chalk.dim('  Build your ideal AI assistant persona through a friendly interview.\n'));
