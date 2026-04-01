@@ -1,0 +1,4 @@
+node_modules/
+persona-system-prompt.txt
+persona-claude-snippet.md
+.env

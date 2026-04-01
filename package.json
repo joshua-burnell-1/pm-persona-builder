@@ -1,0 +1,20 @@
+{
+  "name": "pm-persona-builder",
+  "version": "1.0.0",
+  "description": "CLI tool that interviews you and uses Claude to build your ideal AI assistant persona",
+  "type": "module",
+  "bin": {
+    "pm-persona": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "node test/synthesizer.test.js"
+  },
+  "keywords": ["claude", "persona", "system-prompt", "ai", "cli"],
+  "author": "Josh Burnell",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.81.0",
+    "chalk": "^5.6.2",
+    "inquirer": "^13.3.2"
+  }
+}
